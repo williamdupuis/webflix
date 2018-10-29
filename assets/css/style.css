@@ -1,0 +1,41 @@
+body {
+	color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+	background-color: black;
+}
+
+#main {
+	padding-top: 56px;
+
+	background-image: url('../img/bg.jpg');
+	height: 100vh;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a, a:hover {
+	color: rgb(244, 6, 18);
+}
+
+.navbar-glossy {
+	background-color: rgba(0, 0, 0, 0.8) !important ;
+}
+
+.navbar-brand {
+	color:rgb(244, 6, 18) !important;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 60px; /* Set the fixed height of the footer here */
+	line-height: 60px;
+}
+
+.footer p {
+	margin-bottom: 0;
+}
