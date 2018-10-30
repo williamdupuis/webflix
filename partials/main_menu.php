@@ -8,11 +8,24 @@
 	</li>
 	
 	<li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" href="https://example.com" id="category-dropdown" data-toggle="dropdown">$ACTIVE_CAT</a>
+		<a class="nav-link dropdown-toggle" href="#" id="category-dropdown" data-toggle="dropdown">
+			<?php
+				// Afficher la catégorie courante si
+				// la page est celle d'un film
+				//
+				// Sinon ...
+				echo 'Catégorie';
+			?>
+		</a>
 		<div class="dropdown-menu">
-			<a class="dropdown-item" href="#">$CAT1</a>
-			<a class="dropdown-item" href="#">$CAT2</a>
-        	<a class="dropdown-item" href="#">$CAT3</a>
+			<?php
+            	$categories = get_categories();
+            	foreach ($categories as $id => $name) {
+					echo '<a class="dropdown-item" href="#">';
+					echo $name;
+            		echo '</a>' . "\n";
+            	}
+			?>
     	</div>
 	</li>
           

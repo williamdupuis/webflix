@@ -9,6 +9,11 @@ echo build_body_top($pageTitle);
 
 
 // Get movies
+
+// Debug
+    echo '<div style="background-color: #fff;">';
+    var_dump($_SESSION);
+    echo '</div>';
 ?>
 
 
