@@ -1,8 +1,20 @@
 
 <?php
+
+
 require_once(__DIR__.'/config/config.php');
 require_once(__DIR__.'/config/functions.php');
 require_once(__DIR__.'/partials/header.php');
+
+/* Pas top, la page commence à être construite en attendant la 403 */
+
+// In fact, admin session but not now
+if ( !isset($_SESSION['active']) ) {
+    header('HTTP/1.0 403 Forbidden');
+    header('Location: '.$DOCUMENT_ROOT.'/403.php');
+    // Redirect to 403.php
+    die();
+}
 
 $pageTitle = 'Ajouter un film';
 echo build_body_top($pageTitle);
