@@ -36,11 +36,15 @@ echo build_body_top($pageTitle);
                 <label for="movieCategory">Catégorie</label>
                 <select class="custom-select d-block w-100" id="movieCategory" required="true">
                     <option value="">Choisissez une catégorie...</option>
-                    <option>$CAT1</option>
-                    <option>$CAT2</option>
-                    <option>$CAT3</option>
-                    <option>$CAT4</option>
-                    <option>$CAT5</option>
+                    <?php
+                    $categories = get_categories();
+                    var_dump($categories);
+                    foreach ($categories as $id => $name) {
+                        echo '<option name="' . $id . '">';
+                        echo $name ;
+                        echo '</option>' . "\n";
+                    }
+                    ?>
                 </select>
                 <div class="invalid-feedback">Please provide a valid state.</div>
             </div>

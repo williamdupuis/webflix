@@ -15,9 +15,9 @@ $dbpassword = '';
  * > GRANT ALL PRIVILEGES ON webflix.* TO 'wf_admin'@'localhost';
  */
 
- 
+
 try {
-	$db = new PDO("$dbprovider:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpassword);
+    $db = new PDO("$dbprovider:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpassword);
 } catch(Exception $e) {
     echo '<p>Connexion à la base de données impossible</p>';
     echo '<p>'.$e->getMessage().'</p>';
