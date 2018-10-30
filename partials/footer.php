@@ -1,3 +1,4 @@
+<?php require_once(__DIR__.'/end_of_main.php'); ?>
 <footer class="footer">
 	<p>&copy; 2017-2018 <?= $companyName ?> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 </footer>

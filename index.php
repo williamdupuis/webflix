@@ -7,8 +7,12 @@ require_once(__DIR__.'/partials/header.php');
 $pageTitle = 'Liste des films';
 echo build_body_top($pageTitle);
 
-// Récupérer les films
+
+// Get movies
+?>
 
 
+
+<?php
 require_once(__DIR__.'/partials/footer.php');
 ?>

@@ -41,8 +41,13 @@ a, a:hover {
 }
 
 
+.back-container {
+	background: rgba(0, 0, 0, 0.75);
+	padding: 10px;
+}
+
 /* Searchbar */
-.input-group.md-form.form-sm.form-1 input{
+/* .input-group.md-form.form-sm.form-1 input{
     border: 1px solid #bdbdbd;
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
@@ -60,4 +65,4 @@ a, a:hover {
 }
 .input-group.md-form.form-sm.form-2 input.amber-border  {
     border: 1px solid #ffca28;
-}
+} */
